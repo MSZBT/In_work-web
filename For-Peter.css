@@ -122,11 +122,11 @@ navigation-button-t{
 	margin: 20px auto;
 }
 
-.secondmenu:hover body > .header{
-	background-color: red;
-	
-	
+.secondmenu:hover + .secondmenu-second {
+  display: block;
 }
+
+
 
 img {
 	color: white;
