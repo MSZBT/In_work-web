@@ -20,7 +20,7 @@ body {
 .main {
 	width: 100%;
 	max-width: 1536px;
-	height: 1500px;
+	height: 3500px;
 	background-color: var(--cl-black);
 	margin: 0 auto;
 }
@@ -36,6 +36,7 @@ body {
   height: 140px;
   color: #fff;
   z-index: 3;
+  background-color: var(--cl-black);
   border-bottom: 5px solid var(--cl-purple);
 }
 
@@ -139,6 +140,104 @@ img {
 	color: white;
 }
 
+
+selection-photo img {
+	max-width: 100%;
+	height: auto;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+selection-photo {
+	justify-content: center;
+}
+selection-photo p{
+	margin-bottom: 50px;
+}
+
+.logo-text-block {
+	position: relative;
+	float: right;
+	margin-top: -250px;
+}
+
+.logo-text-block h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 103px;
+	text-align: right;
+	color: white;
+}
+
+.logo-text-block p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 42px;
+	text-align: right;
+	color: white;
+	opacity: 0.6;
+}
+.predselection {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 67px;
+	color: #FFFFFF;
+	margin-left: 50px;
+	margin-top: 120px;
+}
+
+.selection-peter {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.selection-peter img {
+	width: 100%;
+	max-width: 700px;
+	opacity: 0.6;
+}
+
+txt-block-peter {
+	max-width: 500px;
+	margin-left: 50px;
+}
+
+txt-block-peter p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 42px;
+	opacity: 0.6;
+	color: #FFFFFF;
+}
+
+txt-block-peter p:nth-child(2){
+	margin-top: 50px;
+}
+
+@media(max-width: 1536px) {
+	.predselection {
+		margin-left: 0;
+	}
+}
+
+@media(max-width: 1249px) {
+	txt-block-peter {
+		margin-top: 50px;
+		margin-left: 0px;
+	}
+}
+
 @media(max-width: 940px) {
 	.button-block {
 		display: none;
@@ -150,8 +249,24 @@ img {
 		align-items: center;
 	}
 }
+@media(max-width: 700px) {
+	.logo-text-block {
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+	.predselection {
+		margin-top: 200px;
+	}
+}
 
-
+@media(max-width: 500px) {
+	.header {
+		height: 100px;
+	}
+	.secondmenu-second {
+		top: 100px;
+	}
+}
 @media(max-width: 450px) {
 	.logo-block p {
 		display: none;
