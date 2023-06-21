@@ -1,4 +1,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+a { transition: 0.5s}
+
 :root {
 	--cl-purple: #8B008B;
 	--cl-black: black;
@@ -491,6 +493,235 @@ i {
 	opacity: 0.6;
 }
 
+.linkline {
+	margin-top: 50px;
+	
+	text-align: center;
+}
+.linkline p {
+	margin-top: 20px;
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	color: var(--cl-white);
+	opacity: 0.6;	
+}
+
+.ll-button {
+	margin: 20px auto;	
+	width: 200px;	
+	height: 80px;	
+	border-radius: 25px;
+	border: 5px solid var(--cl-purple);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ll-button:hover {
+	transition-duration: 0.5s;
+	transform: translate(0px, -5px);
+	background-color: var(--cl-purple);
+	-webkit-box-shadow: 0px 0px 10px 8px rgba(139, 0, 139, 0.62);
+	-moz-box-shadow: 0px 0px 10px 8px rgba(139, 0, 139, 0.62);
+	box-shadow: 0px 0px 10px 8px rgba(139, 0, 139, 0.62);
+}
+
+r {
+	font-size: 50px;
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	color: var(--cl-white);
+}
+
+.lineblock-final {
+	width: 100%;
+	height: 400px;
+	padding-bottom: 0px;
+	text-align: center;
+	border-bottom: 5px solid var(--cl-purple);
+	border-top: 5px solid var(--cl-purple);
+}
+
+.lineblock-final h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 85px;
+	color: var(--cl-white);
+}
+.line2 {
+	text-align: center;
+	width: 100%;
+    height: 40%;
+    background-color: var(--cl-purple);
+}
+
+.line2 h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 145px;
+	color: var(--cl-white);
+
+	margin-top: -70px;
+}
+.rt {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	float: center;
+	color: #FFFFFF;
+
+	opacity: 0.55;
+}
+
+.wrapper2 {
+	margin: 50px;
+	text-align: center;
+}
+.bolshoichert {
+	margin: 0 auto;
+	width: 400px;
+	height: 1200px;
+	max-width: 1000px;
+	max-height: 1100px;
+	width: 100%;
+	overflow: hidden;
+	background: url("For peter/IMG_4735.JPG");
+	background-position: center 40%;
+
+
+
+}
+
+.no-way-back h1 {
+	color: black;
+}
+.bolshoichert img {
+	width: 100%;
+	z-index: 1;
+}
+
+.links-chert {
+	margin: 800px auto;
+	max-width: 1000px;
+	max-width: 450px;
+	width: 95%;
+	height: 100px;
+	border-radius: 25px;
+	background-color: var(--cl-white);
+	border: 5px solid var(--cl-black);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.soc {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+
+.footer {
+	margin: 0 auto;
+	display: flex;
+	max-width: 1000px;
+	width: 100%;
+	background-color: var(--cl-black);
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.kolonka {
+	width: 150px;
+	background-color: var(--cl-black);
+}
+
+.kolonka img {
+	width: 100%;
+	opacity: 0.6;
+}
+.Peter {
+	margin-right: 50px;
+}
+
+.Peter p, h1 {
+	color: var(--cl-white);
+}
+
+.Peter h1 {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 42px;
+
+	color: #FFFFFF;
+}
+
+.Peter p {
+	margin-top: 5px;
+	margin-left: 10px;
+	color: #FFFFFF;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	opacity: 0.6;
+}
+
+.soc-c {
+	width: 140px;
+	height: 50px;
+	margin-top: 30px;
+	margin-left: 10px;
+	background-color: white;
+}
+
+
+
+.menu h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 67px;
+	/* identical to box height */
+
+
+	color: #8B008B;
+
+	border: 3px solid #000000;
+}
+
+wecwr a {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+
+	color: #FFFFFF;
+
+	border: 3px solid #000000;
+}
+
+wecwr a:hover {
+	transition-duration: 0.5s;
+	color: var(--cl-purple);
+}
 
 @media(max-width: 1536px) {
 	.predselection {
@@ -527,6 +758,12 @@ i {
 		justify-content: center;
 		align-items: center;
 	}
+	.kolonka {
+		display: none;
+	}
+	.menu {
+		display: none;
+	}
 }
 
 @media(max-width: 899px) {
@@ -550,11 +787,16 @@ i {
 		font-size: 60px;
 	}
 }
-
+@media(max-width: 519px) {
+	.line2 h1 {
+		font-size: 50px;
+	}	
+}
 @media(max-width: 512px) {
 	.serv-predselection2 .line h1 {
 		font-size: 50px;
 	}
+
 }
 
 
