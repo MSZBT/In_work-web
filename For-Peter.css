@@ -728,6 +728,7 @@ wecwr a:hover {
 		margin-left: 0;
 	}
 }
+
 @media(max-width: 1259px) {
 	.container2 {
 		justify-content: center;
