@@ -6,7 +6,9 @@ a { transition: 0.5s}
 	--cl-black: black;
 	--cl-white: white;
 }
-
+a {
+  text-decoration:none;
+}
 body {
 	background-color: black;
 }
@@ -69,6 +71,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: white;
 }
 
 .navigation-button:hover {
@@ -216,7 +219,7 @@ txt-block-peter p {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 300;
-	font-size: 25px;
+	font-size: 35px;
 	line-height: 42px;
 	opacity: 0.6;
 	color: #FFFFFF;
