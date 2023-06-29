@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WELLDXNE | работа со звуком</title>
 	<link rel="stylesheet" href="For-Peter.css">
+
 	<script src="https://kit.fontawesome.com/a26fa19713.js" crossorigin="anonymous"></script>
 	<meta name="keywords" content="WELLDXNE, саунд-дизайн, звук, биты, заказ, cведение, мастеринг">
 	<meta name="description" content="Личный сайт саунд-инженера из Москвы с псевдонимом WELLDXNE">
 	<meta name="author" content="Peter Zotov">
 	<meta name="author" content="Podorozhniak Vladislav">
-	<meta charset="UTF-8">
 </head>
 <body>
+	<script src="For-Peter.js"></script>
 	<div class="wrapper">
 		<div class="main">
 			<div class="header">
@@ -30,14 +31,17 @@
 					<a class="navigation-button" href="#link-d"><navigation-button-t>Contacts</navigation-button-t></a>
 				</div>
 				<div class="secondmenu">
-					<img src="For-peter-images/menu0_Монтажная область 1.png" width="60" height="60">
-				</div>
-				<div class="secondmenu-second">
-					<a class="navigation-button"><navigation-button-t>About me</navigation-button-t></a>
-					<a class="navigation-button"><navigation-button-t>Services</navigation-button-t></a>
-					<a class="navigation-button"><navigation-button-t>My projects</navigation-button-t></a>
-					<a class="navigation-button"><navigation-button-t>Contacts</navigation-button-t></a>				
-				</div>
+					<img src="For-peter-images/menu0_Монтажная область 1.png" width="80" height="80">
+					<div class="dropdown">
+						<div class="dropbtn"></div>
+					  	<div class="dropdown-content">
+					    	<a href="#link-a"><navigation-button-t>About me</navigation-button-t></a>
+					    	<a href="#link-b"><navigation-button-t>Services</navigation-button-t></a>
+					    	<a href="#link-c"><navigation-button-t>My projects</navigation-button-t></a>
+					    	<a href="#link-d"><navigation-button-t>Contacts</navigation-button-t></a>
+					  	</div>
+					</div>
+				</div>	
 			</div>
 			<selection-photo>
 				<img src="For-peter-images/134342-audiosignal-elektronnyj_muzykalnyj_instrument-mikshernyj_pult-disk_zhokej-zapis-3840x2160 — копия.jpg">
@@ -46,7 +50,8 @@
 					<p>Битмейкер, звукорежиссер, саунд-дизайнер</p>
 				</div>
 			</selection-photo>
-			<div class="predselection" id="link-a">Кто я?</div>
+			<div id="link-a"></div>
+			<div class="predselection">Кто я?</div>
 			
 
 			<div class="selection-peter">
