@@ -198,6 +198,89 @@ main {
     cursor: pointer;
 }                                                                                                                                    
 
+.inputContainer {
+    display: flex;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+
+.form-input {
+    position: relative;
+    
+}
+
+.form-input input::placeholder {
+    opacity: 0;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.form-input input {
+    width: 100%;
+    height: 60px;
+    font-size: 1.2rem;
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-input label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: gray;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.form-input input:focus + label,
+.form-input input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+}
+
+.form-input input:focus {
+    border: 2px solid black;
+}
+
+.searchButton {
+    display: block;
+    background: none;
+    position: relative;    
+
+    width: 80px;
+    height: 40px;
+    border: 1px solid #00000065;
+    margin-left: 10px;
+    background-color: var(--main-color);
+    
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+
+}
+.searchButton span {
+    font-size: 16px;
+}
+.searchButton:hover {
+    background-color: black;
+    color: white;
+    -moz-box-shadow:0 0 5px #000; 
+    -webkit-box-shadow:0 0 5px #000; 
+    box-shadow:0 0 10px #000;
+
+    cursor: pointer;
+}
+
+  
 @media (max-width: 750px) {
     .tranferContainer {display: none;}
     footer {height: 60px;}
