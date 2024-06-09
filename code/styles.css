@@ -499,6 +499,12 @@ main {
     right: -70px;
     z-index: -1;
 }
+.photo {
+    position: absolute;
+    left: 10px;
+    width: 150px;
+    height: 220px;
+}
 
 .qBlock {
     width: 100%;
