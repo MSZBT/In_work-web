@@ -1,6 +1,7 @@
 let busketObject = {
     //id: [количество, цена, name]
 }
+let total = document.querySelector('.feguf')
 
 document.addEventListener('DOMContentLoaded', function() {
     const busketMeals = document.querySelector('.busketMeals');
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sumOfProducts += value[0] * value[1];
             }
         }
+        total.textContent = `${sumOfProducts}₽`
         return sumOfProducts;
     }
 
@@ -39,11 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 count--;
                 counterElement.textContent = count;
                 busketObject[id][0] = count; 
-                console.log(sms(busketObject))
+                sms(busketObject)
             } else {
                 delete busketObject[id]; 
                 busketMeals.removeChild(mealLine); 
-                console.log(busketObject)
+                sms(busketObject)
             }
         });
 
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             count++;
             counterElement.textContent = count;
             busketObject[id][0] = count; 
-            console.log(sms(busketObject))
+            sms(busketObject)
         });
     }
 
@@ -67,12 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (Object.keys(busketObject).includes(id)) {
                 busketObject[id][0] += 1;
-                console.log(Object.keys(busketObject));
             } else {
                 //создание нового
                 busketObject[id] = [1, value, name];
             }            
-            console.log(busketObject);
             
             busketMeals.innerHTML = "";
 
@@ -83,8 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            console.log(sms(busketObject));
-            console.log(Object.values(busketObject));
+            sms(busketObject);
             event.preventDefault();
         });
     });

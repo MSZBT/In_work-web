@@ -758,6 +758,7 @@ button[milk-btn] {
         font-size: 24px;
     }
     .ctgr {display: none;}
+    .photo {display: none;}
     .addBusket {
         width: 80px;
         height: 30px;
