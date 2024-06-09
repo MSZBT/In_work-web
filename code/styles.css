@@ -289,7 +289,7 @@ main {
     position: relative;
     
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 250px;
+    grid-template-columns: repeat(4, 1fr) 350px;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 0px;
@@ -318,7 +318,7 @@ main {
 
 }
 .busketMain {
-    height: 350px;
+    height: 450px;
     width: 100%;
     
     background-color: white;
@@ -429,6 +429,80 @@ main {
     background-repeat: no-repeat;
     
 }
+
+dialog {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.close {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.showBlok {
+    position: fixed;
+    top: 80px;
+    right: 20px;  
+    
+    z-index: 2;
+}
+
+.busketSecondMain {
+    width: 350px;
+    height: 350px;
+
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 15px;
+
+    transition: left 0.5s ease; 
+
+}
+.busketSecondBtn {
+    width: 350px;
+    height: 50px;
+
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: left 0.5s ease; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    right: -400px; /* Элемент спрятан за левым краем */
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form label {
+    font-weight: bold;
+    font-size: 16px;
+}
+form input {
+    width: 320px;
+    height: 40px;
+}
+.payBlock {
+    width: 90%;
+    border: 2px solid black;
+    height: 75px;
+}
+
 
 .card {
     border: 2px solid black;

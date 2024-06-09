@@ -60,8 +60,20 @@
                     <label for="video-url">Поиск продуктов</label>
                 </div>
                 <button class="searchButton"><span>Поиск</span></button>
-                <div class="busketBlockSecond"></div>
+                
             </div>
+            
+            <div class="busketBlockSecond showElement"></div>
+            <div class="showBlok hidden">
+                <div class="busketSecondMain">
+                    <h1 class="feguf2" style="margin: 10px; font-size: 24px;">0</h1>
+                    <div class="busketMeals2" style="padding: 10px;"></div>
+                </div>
+                <button class="busketButton">
+                    <h1>Оплатить</h1>
+                </button>
+            </div>
+            
 
             <div class="mainPartblock">
                 <div class="dropTwo"></div>
@@ -76,8 +88,7 @@
                             <button class="addBusket">В корзину</button>
                         </div>
                         <h1 class="nameProduct" id="1">Name1</h1>
-                        <p class="descriptionProduct">This is some text</p> 
-                        <div class="ctgr" ctgr="fish"></div>     
+                        <p class="descriptionProduct">This is some text</p>  
                     </div>
 
                     <div class="card">
@@ -88,8 +99,7 @@
                             <button class="addBusket">В корзину</button>
                         </div>
                         <h1 class="nameProduct" id="2">Name2</h1>
-                        <p class="descriptionProduct">This is some text</p> 
-                        <div class="ctgr" ctgr="meat"></div>     
+                        <p class="descriptionProduct">This is some text</p>      
                     </div>
 
                     <div class="card">
@@ -100,8 +110,7 @@
                             <button class="addBusket">В корзину</button>
                         </div>
                         <h1 class="nameProduct" id="3">Name3</h1>
-                        <p class="descriptionProduct">This is some text</p> 
-                        <div class="ctgr" ctgr="milk"></div>     
+                        <p class="descriptionProduct">This is some text</p>    
                     </div>
 
                     <div class="card">
@@ -112,8 +121,7 @@
                             <button class="addBusket">В корзину</button>
                         </div>
                         <h1 class="nameProduct" id="4">Name4</h1>
-                        <p class="descriptionProduct">This is some text</p> 
-                        <div class="ctgr" ctgr="veg"></div>     
+                        <p class="descriptionProduct">This is some text</p>   
                     </div>
                     
                 </div>
@@ -197,8 +205,32 @@
         </footer>
     </div>
 
+    <dialog>
+        <button class='close'autofocus></button>
+        <form>
+            <label for="name">Имя Фамилия</label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            <label for="phone">Номер телефона</label>
+            <br>
+            <input type="text" id="phone">
+            <br>
+            <label for="adress">Домашний адресс</label>
+            <br>
+            <input type="text" id="adress">
+            <h1 style="margin-top: 10px;">Сумма</h1>
+            <h1 class="feguf3" style="margin: 10px; font-size: 24px;">0</h1>
+            <div class="payBlock"></div>
+          </form>
+    </dialog>
+      
+      
+
     <script src="/In_work-web/code/scriptVesrt.js"></script>
     <script src="/In_work-web/code/counter.js"></script>
     <script src="/In_work-web/code/addBusket.js"></script>
+    <script src="/In_work-web/code/showing.js"></script>
+    <script src="/In_work-web/code/from.js"></script>
 </body>
 </html>
