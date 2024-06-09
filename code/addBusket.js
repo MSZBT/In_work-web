@@ -1,9 +1,21 @@
 let busketObject = {
-    //name: [количество, цена, id]
+    //id: [количество, цена, name]
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     const busketMeals = document.querySelector('.busketMeals');
+
+    function sms(obj) {
+        let sumOfProducts = 0;
+        
+        for (const key in obj) {
+            if (Object.hasOwnProperty.call(obj, key)) {
+                const value = obj[key];
+                sumOfProducts += value[0] * value[1];
+            }
+        }
+        return sumOfProducts;
+    }
 
     function drawbusket(name, count, price, id) {
         let busketItem = `
@@ -26,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (count > 1) {
                 count--;
                 counterElement.textContent = count;
-                busketObject[name][0] = count; 
-                console.log(busketObject)
+                busketObject[id][0] = count; 
+                console.log(sms(busketObject))
             } else {
-                delete busketObject[name]; 
+                delete busketObject[id]; 
                 busketMeals.removeChild(mealLine); 
                 console.log(busketObject)
             }
@@ -39,7 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
             let count = parseInt(counterElement.textContent);
             count++;
             counterElement.textContent = count;
-            busketObject[name][0] = count; 
+            busketObject[id][0] = count; 
+            console.log(sms(busketObject))
         });
     }
 
@@ -50,28 +63,29 @@ document.addEventListener('DOMContentLoaded', function() {
             const card = this.closest('.card');
             const value = card.querySelector('.underBlock h1').textContent;
             const name = card.querySelector('.nameProduct').textContent;
-            const id = card.querySelector('.nameProduct').id
+            const id = card.querySelector('.nameProduct').id;
 
-            if (Object.keys(busketObject).includes(name)) {
-                busketObject[name][0] += 1
-
-            } else{
+            if (Object.keys(busketObject).includes(id)) {
+                busketObject[id][0] += 1;
+                console.log(Object.keys(busketObject));
+            } else {
                 //создание нового
-                busketObject[name] = [1, value, id];
+                busketObject[id] = [1, value, name];
             }            
-            console.log(busketObject)
+            console.log(busketObject);
             
             busketMeals.innerHTML = "";
 
             for (const key in busketObject) {
                 if (Object.hasOwnProperty.call(busketObject, key)) {
                     const value = busketObject[key];
-                    drawbusket(key, value[0], value[1], value[2])
+                    drawbusket(value[2], value[0], value[1], key);
                 }
             }
-
+            
+            console.log(sms(busketObject));
+            console.log(Object.values(busketObject));
             event.preventDefault();
         });
     });
 });
-
